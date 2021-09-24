@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\menuController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\NewsControler;
 use Illuminate\Support\Facades\Route;
 
@@ -9,7 +9,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/menu',[menuController::class,'index']);
+Route::get('/menu',[MenuController::class,'index']);
 
 Route::get('/news',[NewsControler::class,'index']);
 
